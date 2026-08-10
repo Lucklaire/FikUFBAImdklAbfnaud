@@ -10,18 +10,10 @@
     <categoryEntry name="Propelled" id="76a8-984e-19be-85d3" hidden="false"/>
     <categoryEntry name="Sergeant" id="57d7-c7f3-1e08-703f" hidden="false"/>
     <categoryEntry name="Grenades" id="95b4-efab-14b5-223d" hidden="false"/>
-    <categoryEntry name="Covenant" id="38ac-9ab9-fa58-deb4" hidden="false"/>
-    <categoryEntry name="Covenant - Fallen Angels" id="4611-f2be-da54-29cd" hidden="false"/>
-    <categoryEntry name="Covenant - Nine Tails" id="f619-127e-15ef-5438" hidden="false"/>
-    <categoryEntry name="Covenant - Paracesian Guard" id="af35-2280-6ece-10fe" hidden="false"/>
-    <categoryEntry name="Covenant - Plucked Thorns" id="8fee-bb41-6960-25e7" hidden="false"/>
-    <categoryEntry name="Reliquant" id="c050-15f1-6b5f-6f92" hidden="false"/>
-    <categoryEntry name="Immolator" id="c404-4bfd-894d-2a47" hidden="false"/>
-    <categoryEntry name="Prioress" id="75b6-17b2-d2f8-4f88" hidden="false"/>
-    <categoryEntry name="Seraphim" id="a986-c242-b845-bba4" hidden="false"/>
-    <categoryEntry name="Canoness" id="761f-ae27-8ab2-2268" hidden="false"/>
-    <categoryEntry name="Abbess" id="865e-8802-c826-38a8" hidden="false"/>
     <categoryEntry name="Configuration" id="582b-ae8c-5082-f080" hidden="false"/>
+    <categoryEntry name="Hegemony" id="ca35-d578-795a-7bdf" hidden="false"/>
+    <categoryEntry name="Hegemony - House Gillian" id="6440-5bbd-6a82-7856" hidden="false"/>
+    <categoryEntry name="Hegemony - Blood Crests" id="c57e-7b49-8f2a-08b1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Quick Play Force" hidden="false" id="6db5-e602-faac-ae53">
@@ -225,6 +217,21 @@
     <rule name="Stealth" id="7066-41a2-626f-8c70" hidden="false">
       <description>Units with this keyword gain the benefit of cover when targeted by enemy units.</description>
     </rule>
+    <rule name="One Shot" id="04e1-477a-f1f1-8933" hidden="false">
+      <description>Weapons with this keyword may only be used once in a battle.</description>
+    </rule>
+    <rule name="Leader" id="c6c5-1002-6830-b7e8" hidden="false">
+      <description>While a Bodyguard unit contains a Leader, it is known as an Attached unit and, with the exception of rules that are triggered when units are destroyed (pg 12), it is treated as a single unit for all rules purposes. Each time an attack targets an Attached unit, until the attacking unit has resolved all of its attacks, you must use the Toughness characteristic of the Bodyguard models in that unit, even if a Leader in that unit has a different Toughness characteristic. Each time an attack successfully wounds an Attached unit, that attack cannot be allocated to a Strategian model in that unit, even if that Strategian model has lost one or more wounds or has already had attacks allocated to it this phase. As soon as the last Bodyguard model in an Attached unit has been destroyed, any attacks made against that unit that have yet to be allocated can then be allocated to Strategian models in that unit.
+
+
+Each time the last model in a Bodyguard unit is destroyed, each STRATEGIAN unit that is part of that Attached unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
+
+
+Each time the last model in a STRATEGIAN unit that is attached to a Bodyguard unit is destroyed and there is not another STRATEGIAN unit attached, that Attached unit’s Bodyguard unit becomes a separate unit, with its original Starting Strength. If this happens as the result of an attack, they become separate units after the attacking unit has resolved all of its attacks. 
+
+
+Each time a unit that is part of an Attached unit is destroyed, it does not have the keywords of any other units that make up that Attached unit (unless it has those keywords on its own datasheet) for the purposes of any rules that would be triggered when that unit is destroyed.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="25d5-0cb2-6a68-d314">
@@ -302,4 +309,11 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup name="Leader" id="87c3-a82b-7962-7bdd" hidden="false">
+      <infoLinks>
+        <infoLink name="Leader" id="22fd-0e9d-3aa3-158d" hidden="false" type="rule" targetId="c6c5-1002-6830-b7e8"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
 </gameSystem>

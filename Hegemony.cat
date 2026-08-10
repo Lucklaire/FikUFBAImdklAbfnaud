@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e353-a1c9-2995-4655" name="Hegemony" gameSystemId="sys-11c1-b4f4-d522-4149" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Simple Repairs" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="38eb-2c5f-a06e-542f">
+      <characteristics>
+        <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When this unit is lead by a Strategian with the Technomancer keyword, All weapons that possess the One Shot Keyword no longer possess One Shot.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Brutus Crusaders" hidden="false" id="3fbd-d2b3-76f7-2e75">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f425-5e3f-715b-308d"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="9b3a-017d-0e52-edc2" id="d4bb-b677-922b-98bf" primary="true" name="Vehicle"/>
+        <categoryLink targetId="cdd1-3877-ae16-2a6c" id="8ef6-fc05-fba2-7c8c" primary="false" name="Walker"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Brutus Crusader" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="dd6c-eb57-11a2-fd77">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">6&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">6</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">3+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">6</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">8+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">3</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Brutus Crusader" hidden="false" id="de6f-eff0-a526-dd2b">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="586a-8f11-ee09-68e7"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b666-f1b5-a598-ca15"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="90"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear (Right Arm)" id="b918-159f-c25f-2c94" hidden="false" sortIndex="2" defaultSelectionEntryId="6c2f-c6d7-7114-9297">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Skane Gattler" hidden="false" id="6c2f-c6d7-7114-9297">
+                  <profiles>
+                    <profile name="Skane Gattler" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="7318-da11-d096-0fdd">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">30&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">3D6</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">5+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">6</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">2</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mourning Star" hidden="false" id="4260-c9f2-04b1-18b2">
+                  <profiles>
+                    <profile name="Mourning Star" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="1996-d5cc-fd89-e955">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">D3</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">7</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-3</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">3</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Lethal Hits</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal Hits" id="31cb-4231-fd7b-8d54" hidden="false" type="rule" targetId="8f8e-b5ec-c93c-4f49"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Gungdo Flamer" hidden="false" id="5efb-34da-ecd5-d09e">
+                  <profiles>
+                    <profile name="Gungdo Flamer" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="00bc-fae8-97bf-d0d0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">4D6</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Anti-Infantry 6+, Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" id="69c7-53bb-5f75-bcc1" hidden="false" type="rule" targetId="8cb0-db86-1708-5fce"/>
+                    <infoLink name="Anti-" id="6ba3-de5b-6e3a-81ea" hidden="false" type="rule" targetId="b528-2551-ddcd-aa33"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ddb1-c2dc-0f22-2732-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddb1-c2dc-0f22-2732-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wargear (Left Arm)" id="1ec4-83ae-2eb8-a479" hidden="false" sortIndex="1" defaultSelectionEntryId="00bf-a178-db9d-4b69">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Rocket Puncher" hidden="false" id="00bf-a178-db9d-4b69">
+                  <profiles>
+                    <profile name="Rocket Puncher" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="a973-d5d7-3d36-b874">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">9</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-4</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">D6+2</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">One Shot, Anti-Vehicle 3+, Anti-Infantry 3+, Blast, Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="fb8c-3de4-c851-12ba" hidden="false" type="rule" targetId="0f53-a50e-6b5a-242b"/>
+                    <infoLink name="Devastating Wounds" id="5e1a-8646-9dfd-f2d1" hidden="false" type="rule" targetId="8cb0-db86-1708-5fce"/>
+                    <infoLink name="Anti-" id="69a8-1882-b92f-3051" hidden="false" type="rule" targetId="b528-2551-ddcd-aa33"/>
+                    <infoLink name="One Shot" id="3341-1049-a8dc-b9e8" hidden="false" type="rule" targetId="04e1-477a-f1f1-8933"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Arquebus" hidden="false" id="7e59-9346-3efb-0582">
+                  <profiles>
+                    <profile name="Arquebus" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="2469-349e-c9b6-ef94">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">2+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">5</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-4</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">5</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Anti-Vehicle 4+, Lethal Hits, One Shot</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal Hits" id="ad86-6cd7-3bff-6682" hidden="false" type="rule" targetId="8f8e-b5ec-c93c-4f49"/>
+                    <infoLink name="Anti-" id="dd37-320f-ff8c-239b" hidden="false" type="rule" targetId="b528-2551-ddcd-aa33"/>
+                    <infoLink name="One Shot" id="7410-1f73-6249-d786" hidden="false" type="rule" targetId="04e1-477a-f1f1-8933"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Beast Renderer" hidden="false" id="5e8a-1ea5-ea79-1a9e">
+                  <profiles>
+                    <profile name="Beast Renderer" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="10a5-7432-3aea-fa36">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                        <characteristic name="A" typeId="b55f-70f9-9de2-d330">5</characteristic>
+                        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">3+</characteristic>
+                        <characteristic name="S" typeId="a8ee-b244-2d28-0003">6</characteristic>
+                        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-2</characteristic>
+                        <characteristic name="D" typeId="dd29-6916-bce2-1699">3</characteristic>
+                        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8">Sustained Hits 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Sustained Hits" id="b9b6-afef-1e70-d4fe" hidden="false" type="rule" targetId="e7ee-9e5f-f027-7d14"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42d0-1bcb-289f-bd67-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d0-1bcb-289f-bd67-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Simple Repairs" id="cbcd-a7e6-508e-4d6a" hidden="false" type="profile" targetId="38eb-2c5f-a06e-542f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Technomancer" hidden="false" id="b041-59d1-5eef-69bf">
+      <categoryLinks>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="9477-9190-cfe2-4dd6" primary="true" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="fede-0e00-04de-463e" primary="false" name="Infantry"/>
+        <categoryLink targetId="95b4-efab-14b5-223d" id="8889-ea93-46b1-48f1" primary="false" name="Grenades"/>
+        <categoryLink targetId="4c7f-81f2-fa79-f111" id="a5dd-f3c2-87db-8b90" primary="false" name="Technomancer"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Technomancer" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="1c3e-e990-e1da-c0d1">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">7&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">3</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">3+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">4</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">7+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">1</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="35"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Leader" id="0d8c-e36d-8fc7-9b48" hidden="false" type="infoGroup" targetId="87c3-a82b-7962-7bdd">
+          <profiles>
+            <profile name="Leader" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="1951-71b2-acb3-0bd4">
+              <characteristics>
+                <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">This model can be attached to the following units:
+■ Brutus Crusaders
+■ Canine Division</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Brutus Crusaders" hidden="false" id="2f13-3e24-9dfc-e254" targetId="3fbd-d2b3-76f7-2e75" type="selectionEntry"/>
+    <entryLink import="true" name="Technomancer" hidden="false" id="5d9d-ac03-0946-1639" targetId="b041-59d1-5eef-69bf" type="selectionEntry"/>
+  </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Technomancer" id="4c7f-81f2-fa79-f111" hidden="false"/>
+  </categoryEntries>
+</catalogue>

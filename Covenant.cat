@@ -8,11 +8,11 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="63d2-c93d-4a11-8ec0" id="ff52-9979-ee1b-23f8" primary="true" name="Infantry"/>
-        <categoryLink targetId="38ac-9ab9-fa58-deb4" id="2810-2d67-818a-9976" primary="false" name="Covenant"/>
-        <categoryLink targetId="4611-f2be-da54-29cd" id="e484-ae50-1e8d-d3a9" primary="false" name="Covenant - Fallen Angels"/>
-        <categoryLink targetId="f619-127e-15ef-5438" id="4440-2ac9-f084-457b" primary="false" name="Covenant - Nine Tails"/>
-        <categoryLink targetId="8fee-bb41-6960-25e7" id="21b5-7ee1-8762-8ae6" primary="false" name="Covenant - Plucked Thorns"/>
-        <categoryLink targetId="c050-15f1-6b5f-6f92" id="4c7a-5167-a3ab-d3e1" primary="false" name="Reliquant"/>
+        <categoryLink targetId="d875-28d3-7383-ee54" id="cc33-96a3-6ee7-ffca" primary="false" name="Reliquant"/>
+        <categoryLink targetId="cdf0-de31-d9e6-d055" id="0c46-f8ab-545d-2bad" primary="false" name="Covenant - Fallen Angels"/>
+        <categoryLink targetId="8f00-9f28-a8d4-0178" id="25b5-e464-16cc-5786" primary="false" name="Covenant - Plucked Thorns"/>
+        <categoryLink targetId="fa54-b5b5-38ae-9785" id="d6cd-dd55-8576-c593" primary="false" name="Covenant - Nine Tails"/>
+        <categoryLink targetId="e154-8f7c-da5e-002a" id="fc1a-0ef6-1501-8133" primary="false" name="Covenant"/>
       </categoryLinks>
       <costs>
         <cost name="rations" typeId="0d54-ba68-a12e-4d2a" value="70"/>
@@ -249,7 +249,7 @@
               </costs>
               <categoryLinks>
                 <categoryLink targetId="831c-566c-d583-3bc9" id="224a-0569-263a-5e0b" primary="false" name="Elite"/>
-                <categoryLink targetId="c404-4bfd-894d-2a47" id="28de-52d9-0f92-95e2" primary="false" name="Immolator"/>
+                <categoryLink targetId="5062-c1d9-5df3-e57b" id="2254-f0e3-ce34-c903" primary="false" name="Immolator"/>
               </categoryLinks>
             </entryLink>
           </entryLinks>
@@ -329,7 +329,7 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
           <modifiers>
             <modifier type="set" value="2+" field="014c-9ce7-ab96-6dc3">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c404-4bfd-894d-2a47" shared="true" childName="Immolator" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0881-ab34-3ec5-9211" shared="true" childName="Immolator" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -341,7 +341,7 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
         <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Paris Affolter" hidden="false" id="401f-d7e6-0416-0b43">
+    <selectionEntry type="model" import="true" name="Paris Affolter" hidden="false" id="401f-d7e6-0416-0b43">
       <costs>
         <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="110"/>
       </costs>
@@ -350,11 +350,11 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
         <categoryLink targetId="a8cf-df1e-91ac-96ec" id="decd-9372-e6c6-6623" primary="true" name="Character"/>
         <categoryLink targetId="63d2-c93d-4a11-8ec0" id="b3ac-ecdb-12f2-a838" primary="false" name="Infantry"/>
         <categoryLink targetId="76a8-984e-19be-85d3" id="0f56-26ee-430c-60d1" primary="false" name="Propelled"/>
-        <categoryLink targetId="4611-f2be-da54-29cd" id="986f-5e51-1624-4fec" primary="false" name="Covenant - Fallen Angels"/>
-        <categoryLink targetId="75b6-17b2-d2f8-4f88" id="66b1-a474-87fb-0062" primary="false" name="Prioress"/>
-        <categoryLink targetId="a986-c242-b845-bba4" id="4caa-2428-a3f7-e5d4" primary="false" name="Seraphim"/>
         <categoryLink targetId="95b4-efab-14b5-223d" id="c39f-edb1-a108-1998" primary="false" name="Grenades"/>
-        <categoryLink targetId="38ac-9ab9-fa58-deb4" id="a084-7a46-838d-46bb" primary="false" name="Covenant"/>
+        <categoryLink targetId="f5d6-6c75-12f9-ec7a" id="2d8e-6769-990b-0209" primary="false" name="Prioress"/>
+        <categoryLink targetId="c50b-2eb3-fa03-9ad4" id="1ed3-38a5-d3e7-ed53" primary="false" name="Seraphim"/>
+        <categoryLink targetId="cdf0-de31-d9e6-d055" id="5a9c-8cdf-69a1-2273" primary="false" name="Covenant - Fallen Angels"/>
+        <categoryLink targetId="e154-8f7c-da5e-002a" id="6d85-b967-7b9f-ecff" primary="false" name="Covenant"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="147b-2f24-4277-6df5" includeChildSelections="true"/>
@@ -425,8 +425,8 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c404-4bfd-894d-2a47" shared="true" childName="Immolator"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="01e4-8246-2e95-2cdf" shared="true" childName="Strategian"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0881-ab34-3ec5-9211" shared="true" childName="Immolator" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -442,7 +442,7 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
           <modifiers>
             <modifier type="set" value="D6+2" field="b9f5-d618-08d7-cb66">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c404-4bfd-894d-2a47" shared="true" childName="Immolator"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0881-ab34-3ec5-9211" shared="true" childName="Immolator" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -547,12 +547,12 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
         <categoryLink targetId="63d2-c93d-4a11-8ec0" id="f218-7f48-f1e9-06d0" primary="true" name="Infantry"/>
         <categoryLink targetId="831c-566c-d583-3bc9" id="8077-d902-d25e-ee52" primary="false" name="Elite"/>
         <categoryLink targetId="95b4-efab-14b5-223d" id="fc7f-881a-04de-cf43" primary="false" name="Grenades"/>
-        <categoryLink targetId="38ac-9ab9-fa58-deb4" id="f649-865a-f520-d1a9" primary="false" name="Covenant"/>
-        <categoryLink targetId="f619-127e-15ef-5438" id="0e28-4fd5-acb6-a998" primary="false" name="Covenant - Nine Tails"/>
-        <categoryLink targetId="4611-f2be-da54-29cd" id="3251-7849-5682-844b" primary="false" name="Covenant - Fallen Angels"/>
-        <categoryLink targetId="af35-2280-6ece-10fe" id="c868-6792-fef6-a8fa" primary="false" name="Covenant - Paracesian Guard"/>
-        <categoryLink targetId="8fee-bb41-6960-25e7" id="0241-2a4b-ca6d-f4a7" primary="false" name="Covenant - Plucked Thorns"/>
-        <categoryLink targetId="c404-4bfd-894d-2a47" id="c065-ae5b-eeca-471e" primary="false" name="Immolator"/>
+        <categoryLink targetId="cdf0-de31-d9e6-d055" id="586b-b646-a20a-30d8" primary="false" name="Covenant - Fallen Angels"/>
+        <categoryLink targetId="5062-c1d9-5df3-e57b" id="2e32-4e02-5bfc-9aaa" primary="false" name="Immolator"/>
+        <categoryLink targetId="e154-8f7c-da5e-002a" id="7265-d03d-68a0-f9fe" primary="false" name="Covenant"/>
+        <categoryLink targetId="46e0-fb79-d8a9-3e97" id="c1a5-bb5d-918c-35c3" primary="false" name="Covenant - Paracesian Guard"/>
+        <categoryLink targetId="fa54-b5b5-38ae-9785" id="2cab-c061-a158-dcfe" primary="false" name="Covenant - Nine Tails"/>
+        <categoryLink targetId="8f00-9f28-a8d4-0178" id="3712-666d-14af-c7fd" primary="false" name="Covenant - Plucked Thorns"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="190" field="0d54-ba68-a12e-4d2a">
@@ -715,27 +715,17 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
       <categoryLinks>
         <categoryLink targetId="9b3a-017d-0e52-edc2" id="df73-2ac6-cc8f-e275" primary="true" name="Vehicle"/>
         <categoryLink targetId="cdd1-3877-ae16-2a6c" id="c67b-0ee7-fe38-4ce6" primary="false" name="Walker"/>
-        <categoryLink targetId="38ac-9ab9-fa58-deb4" id="4ec1-b5ba-57bb-25cb" primary="false" name="Covenant"/>
-        <categoryLink targetId="4611-f2be-da54-29cd" id="ec2b-c403-bbc1-d1e6" primary="false" name="Covenant - Fallen Angels"/>
-        <categoryLink targetId="8fee-bb41-6960-25e7" id="4ad0-2244-3476-df93" primary="false" name="Covenant - Plucked Thorns"/>
-        <categoryLink targetId="75b6-17b2-d2f8-4f88" id="5946-e8f4-e6f0-0279" primary="false" name="Prioress"/>
-        <categoryLink targetId="865e-8802-c826-38a8" id="d316-40dc-c269-8255" primary="false" name="Abbess"/>
-        <categoryLink targetId="761f-ae27-8ab2-2268" id="b010-2839-9097-c6ad" primary="false" name="Canoness"/>
-        <categoryLink targetId="af35-2280-6ece-10fe" id="d9e5-d9c5-4b65-2674" primary="false" name="Covenant - Paracesian Guard"/>
-        <categoryLink targetId="f619-127e-15ef-5438" id="946a-2b3a-189f-ab52" primary="false" name="Covenant - Nine Tails"/>
+        <categoryLink targetId="7315-430b-628d-f6b8" id="c30d-99e8-46d9-9922" primary="false" name="Abbess"/>
+        <categoryLink targetId="f5d6-6c75-12f9-ec7a" id="7c1c-4ede-ba5c-b8ff" primary="false" name="Prioress"/>
+        <categoryLink targetId="3360-ab06-deac-2e2b" id="fab4-f765-8356-5345" primary="false" name="Canoness"/>
+        <categoryLink targetId="e154-8f7c-da5e-002a" id="c459-48f1-9dc3-4cfd" primary="false" name="Covenant"/>
+        <categoryLink targetId="cdf0-de31-d9e6-d055" id="33b3-c7e9-1947-501b" primary="false" name="Covenant - Fallen Angels"/>
+        <categoryLink targetId="8f00-9f28-a8d4-0178" id="7de6-22cb-3e27-c4bb" primary="false" name="Covenant - Plucked Thorns"/>
+        <categoryLink targetId="fa54-b5b5-38ae-9785" id="5e11-008b-9d7c-ddbc" primary="false" name="Covenant - Nine Tails"/>
+        <categoryLink targetId="46e0-fb79-d8a9-3e97" id="6c7a-536b-f76f-2dcf" primary="false" name="Covenant - Paracesian Guard"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Griever" hidden="false" id="6788-5800-320c-ef8f">
-          <categoryLinks>
-            <categoryLink targetId="9b3a-017d-0e52-edc2" id="8560-a2b9-61c7-8f68" primary="true" name="Vehicle"/>
-            <categoryLink targetId="cdd1-3877-ae16-2a6c" id="af44-82b7-07bd-e048" primary="false" name="Walker"/>
-            <categoryLink targetId="38ac-9ab9-fa58-deb4" id="edf2-fc55-1da1-4971" primary="false" name="Covenant"/>
-            <categoryLink targetId="4611-f2be-da54-29cd" id="97c6-b366-5e78-ab58" primary="false" name="Covenant - Fallen Angels"/>
-            <categoryLink targetId="8fee-bb41-6960-25e7" id="0f14-aadf-62de-2661" primary="false" name="Covenant - Plucked Thorns"/>
-            <categoryLink targetId="75b6-17b2-d2f8-4f88" id="3f99-4459-bb54-fd7b" primary="false" name="Prioress"/>
-            <categoryLink targetId="761f-ae27-8ab2-2268" id="7e38-63bd-50c5-90c8" primary="false" name="Canoness"/>
-            <categoryLink targetId="865e-8802-c826-38a8" id="3abf-0a2f-d6d6-03be" primary="false" name="Abbess"/>
-          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Wargear (Guns)" id="0b57-43b3-b04b-f91f" hidden="false" sortIndex="2">
               <constraints>
@@ -851,7 +841,7 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
           <modifiers>
             <modifier type="set" value="2+" field="014c-9ce7-ab96-6dc3">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c404-4bfd-894d-2a47" shared="true" childName="Immolator"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0881-ab34-3ec5-9211" shared="true" childName="Immolator" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1012,10 +1002,11 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
       <categoryLinks>
         <categoryLink targetId="9b3a-017d-0e52-edc2" id="1093-851b-e0dd-566b" primary="true" name="Vehicle"/>
         <categoryLink targetId="cdd1-3877-ae16-2a6c" id="403b-fcb7-060e-9c42" primary="false" name="Walker"/>
-        <categoryLink targetId="4611-f2be-da54-29cd" id="1a80-7981-b8c7-79eb" primary="false" name="Covenant - Fallen Angels"/>
-        <categoryLink targetId="8fee-bb41-6960-25e7" id="22e1-eb85-c14c-ede8" primary="false" name="Covenant - Plucked Thorns"/>
-        <categoryLink targetId="75b6-17b2-d2f8-4f88" id="ebc3-4c89-455c-1aae" primary="false" name="Prioress"/>
-        <categoryLink targetId="865e-8802-c826-38a8" id="5ff1-66cf-349d-5f57" primary="false" name="Abbess"/>
+        <categoryLink targetId="7315-430b-628d-f6b8" id="8cee-c7a2-a988-f162" primary="false" name="Abbess"/>
+        <categoryLink targetId="f5d6-6c75-12f9-ec7a" id="8f0e-0b5d-db37-9861" primary="false" name="Prioress"/>
+        <categoryLink targetId="8f00-9f28-a8d4-0178" id="116b-fcd7-babb-484c" primary="false" name="Covenant - Plucked Thorns"/>
+        <categoryLink targetId="cdf0-de31-d9e6-d055" id="3d0a-e6b4-4b8c-b07b" primary="false" name="Covenant - Fallen Angels"/>
+        <categoryLink targetId="e154-8f7c-da5e-002a" id="1230-0123-162f-5832" primary="false" name="Covenant"/>
       </categoryLinks>
       <profiles>
         <profile name="Sanctifier" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="b24a-7879-dae7-e480">
@@ -1087,10 +1078,10 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
         <categoryLink targetId="01e4-8246-2e95-2cdf" id="4081-0558-bdb7-36a4" primary="false" name="Strategian"/>
         <categoryLink targetId="831c-566c-d583-3bc9" id="b464-7e2f-136a-507c" primary="false" name="Elite"/>
         <categoryLink targetId="63d2-c93d-4a11-8ec0" id="006d-7548-6fdd-49f6" primary="false" name="Infantry"/>
-        <categoryLink targetId="38ac-9ab9-fa58-deb4" id="523e-11c4-e1c3-5176" primary="false" name="Covenant"/>
-        <categoryLink targetId="4611-f2be-da54-29cd" id="9266-4b7c-e2cf-593f" primary="false" name="Covenant - Fallen Angels"/>
-        <categoryLink targetId="c404-4bfd-894d-2a47" id="7737-b189-583b-dc60" primary="false" name="Immolator"/>
         <categoryLink targetId="a8cf-df1e-91ac-96ec" id="d1f5-b7ba-1101-9a6b" primary="true" name="Character"/>
+        <categoryLink targetId="cdf0-de31-d9e6-d055" id="466e-f681-5460-1604" primary="false" name="Covenant - Fallen Angels"/>
+        <categoryLink targetId="e154-8f7c-da5e-002a" id="d18a-832e-3a1b-f515" primary="false" name="Covenant"/>
+        <categoryLink targetId="5062-c1d9-5df3-e57b" id="c129-3c07-a8bc-409b" primary="false" name="Immolator"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8703-6a61-0a3f-37ec" includeChildSelections="true"/>
@@ -1464,4 +1455,17 @@ You may make up to 3 songs of praise each turn, with the amount of used songs re
 - Embrace, choosing a unit, that unit gains the benefit of cover until your next turn. This must be used during the command phase.</description>
     </rule>
   </sharedRules>
+  <categoryEntries>
+    <categoryEntry name="Covenant" id="e154-8f7c-da5e-002a" hidden="false"/>
+    <categoryEntry name="Covenant - Paracesian Guard" id="46e0-fb79-d8a9-3e97" hidden="false"/>
+    <categoryEntry name="Covenant - Nine Tails" id="fa54-b5b5-38ae-9785" hidden="false"/>
+    <categoryEntry name="Covenant - Plucked Thorns" id="8f00-9f28-a8d4-0178" hidden="false"/>
+    <categoryEntry name="Covenant - Fallen Angels" id="cdf0-de31-d9e6-d055" hidden="false"/>
+    <categoryEntry name="Abbess" id="7315-430b-628d-f6b8" hidden="false"/>
+    <categoryEntry name="Seraphim" id="c50b-2eb3-fa03-9ad4" hidden="false"/>
+    <categoryEntry name="Prioress" id="f5d6-6c75-12f9-ec7a" hidden="false"/>
+    <categoryEntry name="Canoness" id="3360-ab06-deac-2e2b" hidden="false"/>
+    <categoryEntry name="Reliquant" id="d875-28d3-7383-ee54" hidden="false"/>
+    <categoryEntry name="Immolator" id="5062-c1d9-5df3-e57b" hidden="false"/>
+  </categoryEntries>
 </catalogue>
