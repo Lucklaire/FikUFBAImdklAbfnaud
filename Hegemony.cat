@@ -167,6 +167,27 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brutus Crusader Feet" hidden="false" id="24a1-70d7-c63b-499e" sortIndex="3">
+              <profiles>
+                <profile name="Brutus Crusader Feet" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="9a85-c522-02ca-a075">
+                  <characteristics>
+                    <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                    <characteristic name="A" typeId="b55f-70f9-9de2-d330">4</characteristic>
+                    <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+                    <characteristic name="S" typeId="a8ee-b244-2d28-0003">5</characteristic>
+                    <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
+                    <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                    <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8">Extra Attacks</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6705-8a91-ff0e-0ed0-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6705-8a91-ff0e-0ed0-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -209,6 +230,9 @@
           </profiles>
         </infoLink>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0833-140a-9cbc-33b3"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
