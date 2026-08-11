@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="e353-a1c9-2995-4655" name="Hegemony" gameSystemId="sys-11c1-b4f4-d522-4149" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
-    <profile name="Simple Repairs" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="38eb-2c5f-a06e-542f">
+    <profile name="Expert Repairer" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="38eb-2c5f-a06e-542f">
       <characteristics>
-        <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When this unit is lead by a Strategian with the Technomancer keyword, All weapons that possess the One Shot Keyword no longer possess One Shot.</characteristic>
+        <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When this unit is leading a unit with the CYBORG keyword or affects them with an aura ability, said unit&apos;s weapons that have the One Shot keyword may be used as if the keyword was not present.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Backline Shooter" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="38e6-e68e-621e-cdbb">
+      <characteristics>
+        <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">This unit gains Benefit of Cover against ranged attacks when within 6&quot; of an allied unit with the CYBORG keyword.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lowlife" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="73d9-5add-864f-7d85">
+      <characteristics>
+        <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">This Strategian may not be your Overlord.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Brutus Crusaders" hidden="false" id="3fbd-d2b3-76f7-2e75">
+    <selectionEntry type="unit" import="true" name="Brutus Crusader" hidden="false" id="3fbd-d2b3-76f7-2e75">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f425-5e3f-715b-308d"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="9b3a-017d-0e52-edc2" id="d4bb-b677-922b-98bf" primary="true" name="Vehicle"/>
         <categoryLink targetId="cdd1-3877-ae16-2a6c" id="8ef6-fc05-fba2-7c8c" primary="false" name="Walker"/>
+        <categoryLink targetId="9d57-a494-63f9-d5b5" id="bbda-46a7-5ed3-338a" primary="false" name="Cyborg"/>
       </categoryLinks>
       <profiles>
         <profile name="Brutus Crusader" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="dd6c-eb57-11a2-fd77">
@@ -24,8 +35,13 @@
             <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">3+</characteristic>
             <characteristic name="W" typeId="aecb-823f-0649-9ff5">6</characteristic>
             <characteristic name="I" typeId="699e-2276-91ee-895a">8+</characteristic>
-            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">3</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">5</characteristic>
             <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dreadnought (Aura)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="712c-f791-d7ec-0c76">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">Allied CYBORG units within 6&quot; of this unit gain Feel no Pain 5+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -45,9 +61,9 @@
                   <profiles>
                     <profile name="Skane Gattler" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="7318-da11-d096-0fdd">
                       <characteristics>
-                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">30&quot;</characteristic>
-                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">3D6</characteristic>
-                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">5+</characteristic>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">36&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">8</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
                         <characteristic name="S" typeId="0890-57f6-b39c-3afb">6</characteristic>
                         <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
                         <characteristic name="D" typeId="ba91-9e15-d0be-2790">2</characteristic>
@@ -79,10 +95,10 @@
                     <profile name="Gungdo Flamer" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="00bc-fae8-97bf-d0d0">
                       <characteristics>
                         <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
-                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">4D6</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2D6+2</characteristic>
                         <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
-                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
-                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">4</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
                         <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
                         <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Anti-Infantry 6+, Devastating Wounds</characteristic>
                       </characteristics>
@@ -191,7 +207,17 @@
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Simple Repairs" id="cbcd-a7e6-508e-4d6a" hidden="false" type="profile" targetId="38eb-2c5f-a06e-542f"/>
+        <infoLink name="Feel no Pain" id="c871-7709-0bb7-aa16" hidden="false" type="rule" targetId="0618-1f03-ad28-662f">
+          <modifiers>
+            <modifier type="append" value="5+" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deadly Demise" id="8e02-e13d-968c-ade3" hidden="false" type="rule" targetId="6466-c9af-0300-d4d0">
+          <modifiers>
+            <modifier type="append" value="D3" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Backline Shooter" id="0124-f4c3-7675-9d1a" hidden="false" type="profile" targetId="38e6-e68e-621e-cdbb"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Technomancer" hidden="false" id="b041-59d1-5eef-69bf">
@@ -200,6 +226,9 @@
         <categoryLink targetId="63d2-c93d-4a11-8ec0" id="fede-0e00-04de-463e" primary="false" name="Infantry"/>
         <categoryLink targetId="95b4-efab-14b5-223d" id="8889-ea93-46b1-48f1" primary="false" name="Grenades"/>
         <categoryLink targetId="4c7f-81f2-fa79-f111" id="a5dd-f3c2-87db-8b90" primary="false" name="Technomancer"/>
+        <categoryLink targetId="c57e-7b49-8f2a-08b1" id="8c7c-36ff-eaa3-17e9" primary="false" name="Hegemony - Blood Crests"/>
+        <categoryLink targetId="6440-5bbd-6a82-7856" id="6a49-49ab-4b17-324b" primary="false" name="Hegemony - House Gillian"/>
+        <categoryLink targetId="ca35-d578-795a-7bdf" id="cb12-5209-c376-15af" primary="false" name="Hegemony"/>
       </categoryLinks>
       <profiles>
         <profile name="Technomancer" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="1c3e-e990-e1da-c0d1">
@@ -207,10 +236,15 @@
             <characteristic name="M" typeId="5d73-86b8-472a-4a80">7&quot;</characteristic>
             <characteristic name="T" typeId="83b7-1fb0-c002-3f15">3</characteristic>
             <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">3+</characteristic>
-            <characteristic name="W" typeId="aecb-823f-0649-9ff5">4</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">2</characteristic>
             <characteristic name="I" typeId="699e-2276-91ee-895a">7+</characteristic>
             <characteristic name="OC" typeId="a953-6bf3-4f33-c691">1</characteristic>
             <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Upgraded Aim Assist" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="f8e4-f772-af63-29fb">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When leading units with the keywords INFANTRY and CYBORG, the attached unit gains +1 to HS.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -223,23 +257,465 @@
             <profile name="Leader" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="1951-71b2-acb3-0bd4">
               <characteristics>
                 <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">This model can be attached to the following units:
-■ Brutus Crusaders
-■ Canine Division</characteristic>
+■ Brutus Crusader
+■ Canine Horde
+■ Canine Pack</characteristic>
               </characteristics>
             </profile>
           </profiles>
         </infoLink>
+        <infoLink name="Expert Repairer" id="5ab5-68a5-dbab-209d" hidden="false" type="profile" targetId="38eb-2c5f-a06e-542f"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0833-140a-9cbc-33b3"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0833-140a-9cbc-33b3"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Overlord" hidden="false" id="0f52-29ed-26e2-5873" type="selectionEntry" targetId="1be5-6b18-a389-e8bc" sortIndex="1"/>
+        <entryLink import="true" name="PDW" hidden="false" id="83b8-78fa-ad4f-37a4" type="selectionEntry" targetId="7c90-1528-4aba-a76e" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f34-1366-ecb2-74c0-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f34-1366-ecb2-74c0-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="f6c8-4ef7-ff9f-9f61" type="selectionEntry" targetId="86c8-2dc9-4e63-d0b8" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8783-d328-91d1-c9f6-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8783-d328-91d1-c9f6-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Canine Pack" hidden="false" id="c092-1204-c87d-4093">
+      <categoryLinks>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="1617-644d-366e-3fe2" primary="true" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="8c3d-a730-de3f-9e04" primary="false" name="Elite"/>
+        <categoryLink targetId="9d57-a494-63f9-d5b5" id="9564-1553-70a7-eaa9" primary="false" name="Cyborg"/>
+        <categoryLink targetId="ca35-d578-795a-7bdf" id="c376-0c47-c698-379c" primary="false" name="Hegemony"/>
+        <categoryLink targetId="6440-5bbd-6a82-7856" id="4fbc-d21f-3491-5069" primary="false" name="Hegemony - House Gillian"/>
+        <categoryLink targetId="c57e-7b49-8f2a-08b1" id="2f2b-deae-55a0-7f33" primary="false" name="Hegemony - Blood Crests"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="667c-a37a-4cf8-6b41" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="45"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Canine" hidden="false" id="9b7a-e1cc-a05d-cc35" sortIndex="2" defaultAmount="3">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="1ec0-be60-6416-20ce"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8490-5598-e129-5dbb"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="a39e-26b1-7921-f51b" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Carbine Machine Gun" hidden="false" id="2d65-3460-ce2a-97c2">
+                  <modifiers>
+                    <modifier type="set" value="Chambered Machine Gun" field="name">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="c092-1204-c87d-4093" childId="7317-cd19-e9cf-0ec9" shared="true" childName="Enhanced Weaponry"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Carbine Machine Gun" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="8359-9720-4a3f-ded7">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7"/>
+                      </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Chambered Machine Gun" field="name"/>
+                            <modifier type="set" value="3" field="b9f5-d618-08d7-cb66"/>
+                            <modifier type="set" value="4" field="0890-57f6-b39c-3afb"/>
+                            <modifier type="set" value="Rapid Fire 1" field="05f3-68bd-4eee-3fa7"/>
+                          </modifiers>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="c092-1204-c87d-4093" childId="7317-cd19-e9cf-0ec9" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifierGroup>
+                      </modifierGroups>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3aa-d38c-7404-4ff9-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3aa-d38c-7404-4ff9-max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Rapid Fire" id="c9ef-cc20-391b-d111" hidden="false" type="rule" targetId="54dd-2903-9eb0-add4">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="c092-1204-c87d-4093" childId="7317-cd19-e9cf-0ec9" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pata" hidden="false" id="990d-3f45-2a5f-dff0">
+                  <profiles>
+                    <profile name="Pata" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="95db-89b8-a549-2fcd">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                        <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
+                        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+                        <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
+                        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
+                        <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
+                      </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Chained Pata" field="name"/>
+                            <modifier type="set" value="2" field="b55f-70f9-9de2-d330"/>
+                            <modifier type="set" value="4" field="a8ee-b244-2d28-0003"/>
+                            <modifier type="set" value="Sustained Hits 1" field="ec9c-eed4-21dc-53e8"/>
+                          </modifiers>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="c092-1204-c87d-4093" childId="7317-cd19-e9cf-0ec9" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifierGroup>
+                      </modifierGroups>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ff3-9b5c-940c-d312-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ff3-9b5c-940c-d312-max"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Chained Pata" field="name">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="c092-1204-c87d-4093" childId="7317-cd19-e9cf-0ec9" shared="true" childName="Enhanced Weaponry"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Sustained Hits" id="3b46-beb2-4eea-3c81" hidden="false" type="rule" targetId="e7ee-9e5f-f027-7d14">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="c092-1204-c87d-4093" childId="7317-cd19-e9cf-0ec9" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Feel no Pain" id="5683-435f-4f18-c433" hidden="false" type="rule" targetId="0618-1f03-ad28-662f">
+              <modifiers>
+                <modifier type="append" value="6+" field="name" join=" "/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Enhanced Weaponry" hidden="false" id="7317-cd19-e9cf-0ec9" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="20" field="0d54-ba68-a12e-4d2a">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="c092-1204-c87d-4093" childId="9b7a-e1cc-a05d-cc35" shared="true" childName="Canine" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d673-7e07-78a8-0f77"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Canine" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="7076-639e-9663-1823">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">5&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">4</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">4+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">2</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">9+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">1</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="75" field="0d54-ba68-a12e-4d2a" scope="36c4-9817-fba6-617c">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="c092-1204-c87d-4093" childId="9b7a-e1cc-a05d-cc35" shared="true" childName="Canine" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Canine Horde" hidden="false" id="b2b2-774e-5f6f-7955">
+      <categoryLinks>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="53d8-7ab0-e8a3-fbe6" primary="true" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="3fc3-404d-3969-81d2" primary="false" name="Elite"/>
+        <categoryLink targetId="9d57-a494-63f9-d5b5" id="770c-6a04-83f2-1031" primary="false" name="Cyborg"/>
+        <categoryLink targetId="ca35-d578-795a-7bdf" id="9c9d-6464-05d4-e959" primary="false" name="Hegemony"/>
+        <categoryLink targetId="6440-5bbd-6a82-7856" id="ad00-c7db-9f24-a05f" primary="false" name="Hegemony - House Gillian"/>
+        <categoryLink targetId="c57e-7b49-8f2a-08b1" id="c698-381b-b29a-4490" primary="false" name="Hegemony - Blood Crests"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="cbc1-bded-18fc-f9b3" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="150"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Canine" hidden="false" id="f76e-3403-4f5a-4b11" sortIndex="2" defaultAmount="10">
+          <constraints>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="1101-3d38-f990-1c38"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="f6be-22f6-1a40-f074"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="450f-59c3-7a6c-5dd7" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Carbine Machine Gun" hidden="false" id="78e9-197b-075e-667c">
+                  <modifiers>
+                    <modifier type="set" value="Chambered Machine Gun" field="name">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="b2b2-774e-5f6f-7955" childId="cbba-082f-46a6-f768" shared="true" childName="Enhanced Weaponry"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Carbine Machine Gun" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="4ecb-c9a8-22dc-5260">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7"/>
+                      </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Chambered Machine Gun" field="name"/>
+                            <modifier type="set" value="3" field="b9f5-d618-08d7-cb66"/>
+                            <modifier type="set" value="4" field="0890-57f6-b39c-3afb"/>
+                            <modifier type="set" value="Rapid Fire 1" field="05f3-68bd-4eee-3fa7"/>
+                          </modifiers>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="b2b2-774e-5f6f-7955" childId="cbba-082f-46a6-f768" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifierGroup>
+                      </modifierGroups>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6c7-26c2-2feb-1d38-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6c7-26c2-2feb-1d38-max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Rapid Fire" id="6162-2e7b-42c9-378d" hidden="false" type="rule" targetId="54dd-2903-9eb0-add4">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="b2b2-774e-5f6f-7955" childId="cbba-082f-46a6-f768" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pata" hidden="false" id="2f91-932b-4399-835b">
+                  <profiles>
+                    <profile name="Pata" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="5e1d-e672-58cd-bad5">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                        <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
+                        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+                        <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
+                        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
+                        <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
+                      </characteristics>
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Chained Pata" field="name"/>
+                            <modifier type="set" value="2" field="b55f-70f9-9de2-d330"/>
+                            <modifier type="set" value="4" field="a8ee-b244-2d28-0003"/>
+                            <modifier type="set" value="Sustained Hits 1" field="ec9c-eed4-21dc-53e8"/>
+                          </modifiers>
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="b2b2-774e-5f6f-7955" childId="cbba-082f-46a6-f768" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifierGroup>
+                      </modifierGroups>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c99e-a57e-c608-815b-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c99e-a57e-c608-815b-max"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Chained Pata" field="name">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="b2b2-774e-5f6f-7955" childId="cbba-082f-46a6-f768" shared="true" childName="Enhanced Weaponry"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Sustained Hits" id="a0f9-af82-2770-227f" hidden="false" type="rule" targetId="e7ee-9e5f-f027-7d14">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="b2b2-774e-5f6f-7955" childId="cbba-082f-46a6-f768" shared="true" childName="Enhanced Weaponry"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Feel no Pain" id="89e4-bfd5-4932-60a6" hidden="false" type="rule" targetId="0618-1f03-ad28-662f">
+              <modifiers>
+                <modifier type="append" value="6+" field="name" join=" "/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Enhanced Weaponry" hidden="false" id="cbba-082f-46a6-f768" sortIndex="1">
+          <costs>
+            <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="30"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="60" field="0d54-ba68-a12e-4d2a">
+              <conditions>
+                <condition type="atLeast" value="11" field="selections" scope="b2b2-774e-5f6f-7955" childId="f76e-3403-4f5a-4b11" shared="true" childName="Canine" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="142a-3eb2-b4f2-a80c"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Canine" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="71bf-9f64-54a6-b710">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">5&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">4</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">4+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">2</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">9+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">1</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="310" field="0d54-ba68-a12e-4d2a" scope="5c78-0b50-1407-b1e9">
+          <conditions>
+            <condition type="atLeast" value="11" field="selections" scope="b2b2-774e-5f6f-7955" childId="f76e-3403-4f5a-4b11" shared="true" childName="Canine" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Nomadic Technomancer" hidden="false" id="4374-718b-4a72-2d9c">
+      <profiles>
+        <profile name="Nomadic Technomancer" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="5d5a-fb59-157e-aabd">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">7&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">4</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">3+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">4</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">7+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">1</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nomadic Technomancer" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="b69f-0651-a51b-e7f9">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">Text</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb22-378a-115b-3905"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="65"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Overlord" hidden="false" id="c284-1670-23c5-27ac" type="selectionEntry" targetId="1be5-6b18-a389-e8bc" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3a13-90b4-2a10-cbaf-min"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3a13-90b4-2a10-cbaf-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="3600-3dcb-7b7a-5e37" type="selectionEntry" targetId="86c8-2dc9-4e63-d0b8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="018c-c2d9-9dcb-c913-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="018c-c2d9-9dcb-c913-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="4c41-8a11-53d6-6b83" primary="true" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="cb0e-828e-a8f5-aabe" primary="false" name="Infantry"/>
+        <categoryLink targetId="95b4-efab-14b5-223d" id="6be0-599d-62b8-1e82" primary="false" name="Grenades"/>
+        <categoryLink targetId="ca35-d578-795a-7bdf" id="f601-6ed8-c1fa-a1b1" primary="false" name="Hegemony"/>
+        <categoryLink targetId="6440-5bbd-6a82-7856" id="6f07-676e-30e4-8ecc" primary="false" name="Hegemony - House Gillian"/>
+        <categoryLink targetId="c57e-7b49-8f2a-08b1" id="c593-fde2-0805-db14" primary="false" name="Hegemony - Blood Crests"/>
+        <categoryLink targetId="4c7f-81f2-fa79-f111" id="4b95-9a24-78e6-de91" primary="false" name="Technomancer"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Lowlife" id="4b86-d9d7-16e2-0ea8" hidden="false" type="profile" targetId="73d9-5add-864f-7d85"/>
+        <infoLink name="Expert Repairer" id="4e12-9dae-f2e9-d135" hidden="false" type="profile" targetId="38eb-2c5f-a06e-542f"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Claptrap" hidden="false" id="d478-eb1e-809a-2e61">
+          <profiles>
+            <profile name="Claptrap" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="dae9-5c93-78d3-dc8e">
+              <characteristics>
+                <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+                <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2</characteristic>
+                <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+                <characteristic name="S" typeId="0890-57f6-b39c-3afb">4</characteristic>
+                <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+                <characteristic name="D" typeId="ba91-9e15-d0be-2790">2</characteristic>
+                <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Lethal Hits</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lethal Hits" id="f898-61ae-bfdb-131d" hidden="false" type="rule" targetId="8f8e-b5ec-c93c-4f49"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e3e-44c2-5378-963e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e3e-44c2-5378-963e-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Brutus Crusaders" hidden="false" id="2f13-3e24-9dfc-e254" targetId="3fbd-d2b3-76f7-2e75" type="selectionEntry"/>
+    <entryLink import="true" name="Brutus Crusader" hidden="false" id="2f13-3e24-9dfc-e254" targetId="3fbd-d2b3-76f7-2e75" type="selectionEntry"/>
     <entryLink import="true" name="Technomancer" hidden="false" id="5d9d-ac03-0946-1639" targetId="b041-59d1-5eef-69bf" type="selectionEntry"/>
+    <entryLink import="true" name="Canine Pack" hidden="false" id="36c4-9817-fba6-617c" targetId="c092-1204-c87d-4093" type="selectionEntry"/>
+    <entryLink import="true" name="Canine Horde" hidden="false" id="5c78-0b50-1407-b1e9" targetId="b2b2-774e-5f6f-7955" type="selectionEntry"/>
+    <entryLink import="true" name="Nomadic Technomancer" hidden="false" id="6561-d996-8c99-b0ba" targetId="4374-718b-4a72-2d9c" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Technomancer" id="4c7f-81f2-fa79-f111" hidden="false"/>
+    <categoryEntry name="Cyborg" id="9d57-a494-63f9-d5b5" hidden="false"/>
   </categoryEntries>
 </catalogue>

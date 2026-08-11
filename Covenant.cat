@@ -669,11 +669,6 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
         <infoLink name="Xiphos" id="1bfb-9a67-a3db-bbee" hidden="false" type="profile" targetId="70a6-a637-af54-2d59"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="86c8-2dc9-4e63-d0b8">
-      <infoLinks>
-        <infoLink name="Close Combat Weapon" id="8663-38a3-9c6a-d665" hidden="false" type="profile" targetId="f809-8918-06db-86c9"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Recusant LR18" hidden="false" id="b64c-06e2-9cf9-1260">
       <infoLinks>
         <infoLink name="Recusant LR18" id="fb3d-bf1a-d022-bad9" hidden="false" type="profile" targetId="395c-581d-9c81-ba51"/>
@@ -1232,7 +1227,7 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
     </profile>
     <profile name="Anarch LR9" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="8a4f-c068-749b-38d1">
       <characteristics>
-        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">30&quot;</characteristic>
+        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
         <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
         <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
         <characteristic name="S" typeId="0890-57f6-b39c-3afb">9</characteristic>
@@ -1265,12 +1260,12 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
     </profile>
     <profile name="Recusant LR18" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="395c-581d-9c81-ba51">
       <characteristics>
-        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
+        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
         <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2</characteristic>
         <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">2+</characteristic>
         <characteristic name="S" typeId="0890-57f6-b39c-3afb">9</characteristic>
         <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-4</characteristic>
-        <characteristic name="D" typeId="ba91-9e15-d0be-2790">D6+1</characteristic>
+        <characteristic name="D" typeId="ba91-9e15-d0be-2790">D6</characteristic>
         <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Entropic 2, Heavy</characteristic>
       </characteristics>
     </profile>
@@ -1337,17 +1332,6 @@ Normal Reliquants in this unit now possess an OC of 2.</characteristic>
         <characteristic name="S" typeId="a8ee-b244-2d28-0003">5</characteristic>
         <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
         <characteristic name="D" typeId="dd29-6916-bce2-1699">2</characteristic>
-        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
-      </characteristics>
-    </profile>
-    <profile name="Close Combat Weapon" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="f809-8918-06db-86c9">
-      <characteristics>
-        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
-        <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
-        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
-        <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
-        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">0</characteristic>
-        <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
         <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
       </characteristics>
     </profile>

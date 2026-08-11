@@ -194,7 +194,7 @@
       <description>Weapons with this keyword may choose to specifically target a Strategian or Character, even if they have bodyguards.</description>
     </rule>
     <rule name="Deadly Demise" id="6466-c9af-0300-d4d0" hidden="false">
-      <description>On death, roll a D6, on a 1, this model explodes, dealing x mortal wounds to units within 6&quot;.</description>
+      <description>On death, roll a D6, on a 6, this model explodes, dealing x mortal wounds to units within 6&quot;.</description>
     </rule>
     <rule name="Blast" id="0f53-a50e-6b5a-242b" hidden="false">
       <description>When a weapon with this keyword fires, its damage is dealt as Mortal wounds to the targeted unit.</description>
@@ -293,6 +293,16 @@ Each time a unit that is part of an Attached unit is destroyed, it does not have
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9e67-d6ec-708a-c1d0-max" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="86c8-2dc9-4e63-d0b8">
+      <infoLinks>
+        <infoLink name="Close Combat Weapon" id="8663-38a3-9c6a-d665" hidden="false" type="profile" targetId="f809-8918-06db-86c9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PDW" hidden="false" id="7c90-1528-4aba-a76e">
+      <infoLinks>
+        <infoLink name="PDW" id="99a9-3571-7128-7025" hidden="false" type="profile" targetId="5ded-a548-ae9e-c7a2"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Battle Size" hidden="false" id="4ae2-437f-d580-fbee" targetId="25d5-0cb2-6a68-d314" type="selectionEntry"/>
@@ -306,6 +316,28 @@ Each time a unit that is part of an Attached unit is destroyed, it does not have
     <profile name="Self Repair" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="1e2b-d286-7931-d8e9">
       <characteristics>
         <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When a model has Self Repair (x), at the beginning of every command phase, this model regenerates x wounds.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Close Combat Weapon" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="f809-8918-06db-86c9">
+      <characteristics>
+        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+        <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
+        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+        <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
+        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">0</characteristic>
+        <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
+      </characteristics>
+    </profile>
+    <profile name="PDW" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="5ded-a548-ae9e-c7a2">
+      <characteristics>
+        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
+        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">0</characteristic>
+        <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7"/>
       </characteristics>
     </profile>
   </sharedProfiles>
