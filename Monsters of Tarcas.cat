@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="2e51-c9e2-2384-6f55" name="Monsters of Tarcas" gameSystemId="sys-11c1-b4f4-d522-4149" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Black Wind Knight" id="2649-4b79-1cd4-23b8" hidden="false"/>
+    <categoryEntry name="Monsters of Tarcas" id="ed27-f3df-0200-8193" hidden="false"/>
+    <categoryEntry name="Orc" id="ce59-794d-5f3e-ce3c" hidden="false"/>
+    <categoryEntry name="Cult of the Wretched" id="34b3-a79e-eada-8503" hidden="false"/>
+    <categoryEntry name="Golum" id="fc65-5d28-f8e5-de2b" hidden="false"/>
+    <categoryEntry name="Occult" id="3774-0b71-ff47-5d6c" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Black Wind Knights" hidden="false" id="4ca2-462e-efcf-0863" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="939a-9367-7c6f-5cdb" primary="false" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="d25b-4387-b8ef-02d0" primary="true" name="Elite"/>
+        <categoryLink targetId="2649-4b79-1cd4-23b8" id="659c-a7c8-65a4-db9e" primary="false" name="Black Wind Knight"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="b0a5-75d6-ac35-aed5" primary="false" name="Monsters of Tarcas"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Orc Lurkers" hidden="false" id="73fc-4545-effc-62e5" sortIndex="2">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="6fd3-03a4-6793-c23b" primary="true" name="Infantry"/>
+        <categoryLink targetId="ce59-794d-5f3e-ce3c" id="e5f8-bcd6-cebb-e9af" primary="false" name="Orc"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="0476-9b9c-149d-e55f" primary="false" name="Monsters of Tarcas"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Stone Golum" hidden="false" id="b3f4-7265-39f0-7621" sortIndex="3">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9b3a-017d-0e52-edc2" id="2825-cc33-c1ad-1d24" primary="false" name="Vehicle"/>
+        <categoryLink targetId="cdd1-3877-ae16-2a6c" id="f4cf-d067-66b8-7a12" primary="true" name="Walker"/>
+        <categoryLink targetId="34b3-a79e-eada-8503" id="ec9a-1391-dc00-cb30" primary="false" name="Cult of the Wretched"/>
+        <categoryLink targetId="fc65-5d28-f8e5-de2b" id="20ab-2ed6-a6d8-24db" primary="false" name="Golum"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Occultist" hidden="false" id="ce18-5091-ae84-b034" sortIndex="1">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="aee1-85c7-f1a6-d365" primary="true" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="d98e-7e34-aa09-42be" primary="false" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="f6b1-af60-c9e8-e506" primary="false" name="Elite"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="2d0a-85d2-4c64-256d" primary="false" name="Monsters of Tarcas"/>
+        <categoryLink targetId="34b3-a79e-eada-8503" id="f6a7-3ef8-0c13-144d" primary="false" name="Cult of the Wretched"/>
+        <categoryLink targetId="3774-0b71-ff47-5d6c" id="e69e-6990-3460-3d1f" primary="false" name="Occult"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Overlord" hidden="false" id="5f31-b68f-3588-3f3b" type="selectionEntry" targetId="1be5-6b18-a389-e8bc" sortIndex="1"/>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="cb42-810a-8f83-92d3" type="selectionEntry" targetId="86c8-2dc9-4e63-d0b8" sortIndex="2"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="The Ritual of Kalgorath" id="fae9-f99c-38c5-a162" hidden="false" type="rule" targetId="0ca6-7a49-1d72-5c30"/>
+        <infoLink name="Leader" id="ffab-0869-1d92-38ae" hidden="false" type="infoGroup" targetId="87c3-a82b-7962-7bdd"/>
+        <infoLink name="Children of Tarcas" id="97c2-d36b-9a44-e674" hidden="false" type="rule" targetId="3416-10b7-b72d-2a0e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4c86-ca8e-5d0b-dc68"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="b86d-d1b2-4a94-8f89" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ragnorak Surge" hidden="false" id="880e-9cbe-fdc1-ecb0">
+              <profiles>
+                <profile name="Ragnorak Surge" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="1abc-4d14-a421-0299">
+                  <characteristics>
+                    <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
+                    <characteristic name="A" typeId="b9f5-d618-08d7-cb66">D3+2</characteristic>
+                    <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
+                    <characteristic name="S" typeId="0890-57f6-b39c-3afb">7</characteristic>
+                    <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+                    <characteristic name="D" typeId="ba91-9e15-d0be-2790">D3</characteristic>
+                    <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Blast Occult</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tragedy Befalls" hidden="false" id="2784-2890-d5c0-0700">
+              <profiles>
+                <profile name="Hellfire Bolt" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="cde8-4257-e7c0-7b5a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+                    <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2</characteristic>
+                    <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+                    <characteristic name="S" typeId="0890-57f6-b39c-3afb">5</characteristic>
+                    <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+                    <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+                    <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Tragedy Befalls" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="5062-bce4-a0dc-f37e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">In your shooting phase, select on enemy model within 18&quot;. That unit must make a leadership test. On a fail, they suffer a -1 to saving throws until the beginning of your next turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8858-87b0-05a7-9c46-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8858-87b0-05a7-9c46-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Force Fate (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="cafb-43f9-9169-89a0">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">During your shooting phase, make a leadership test for this unit. On a fail, enemy units have Lethal Hits while targeting this unit until the start of your next turn. This unit&apos;s Occult weapons now have Devastating Wounds until the start of your next turn. Alternatively, you can select one friendly unit within 9&quot; to suffer the lethal hits effect.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Occultist" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="f9de-d652-4e5f-5845">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">6&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">3</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">6+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">3</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">6+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">2</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lagrashee" hidden="false" id="a301-324b-f221-a4d5" sortIndex="0">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a8cf-df1e-91ac-96ec" id="648b-948e-d865-ee06" primary="true" name="Character"/>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="0c6b-830c-c1a5-524a" primary="false" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="1e32-c233-61c1-0b3b" primary="false" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="6ac1-1004-b9ca-4549" primary="false" name="Elite"/>
+        <categoryLink targetId="ce59-794d-5f3e-ce3c" id="7732-36b2-ea5e-0fe4" primary="false" name="Orc"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="6a26-7bb3-62ad-730f" primary="false" name="Monsters of Tarcas"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ordos" hidden="false" id="dabd-ceaf-217e-2582" sortIndex="0">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a8cf-df1e-91ac-96ec" id="fd43-9527-bfad-84d1" primary="true" name="Character"/>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="a275-2c7b-5ac3-9ff8" primary="false" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="5e8c-e91a-f4c7-ead7" primary="false" name="Infantry"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="d96f-0319-c258-9d14" primary="false" name="Monsters of Tarcas"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kalgorath" hidden="false" id="6873-6410-fad0-9a7e" sortIndex="0">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a8cf-df1e-91ac-96ec" id="b044-37f3-8c04-eabf" primary="true" name="Character"/>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="fcac-6516-c85a-0de3" primary="false" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="46a0-29c9-5c34-4f2f" primary="false" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="7d7a-31aa-a9e2-da30" primary="false" name="Elite"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="4034-76cb-b871-ffa5" primary="false" name="Monsters of Tarcas"/>
+        <categoryLink targetId="cdd1-3877-ae16-2a6c" id="9c84-1797-2e9e-ffd6" primary="false" name="Walker"/>
+        <categoryLink targetId="34b3-a79e-eada-8503" id="5824-9998-83bb-6f55" primary="false" name="Cult of the Wretched"/>
+        <categoryLink targetId="3774-0b71-ff47-5d6c" id="472b-8ca4-0780-722c" primary="false" name="Occult"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Moribund" hidden="false" id="2322-19fd-49aa-c010" sortIndex="0">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a8cf-df1e-91ac-96ec" id="c75c-4ab6-828f-eb07" primary="true" name="Character"/>
+        <categoryLink targetId="01e4-8246-2e95-2cdf" id="3b46-0278-1282-1b29" primary="false" name="Strategian"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="dbc8-ebae-d859-8c1d" primary="false" name="Infantry"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="4667-61b8-f1a0-15eb" primary="false" name="Monsters of Tarcas"/>
+        <categoryLink targetId="34b3-a79e-eada-8503" id="f6bb-bb16-6849-f442" primary="false" name="Cult of the Wretched"/>
+        <categoryLink targetId="3774-0b71-ff47-5d6c" id="a00a-5d3c-952c-c260" primary="false" name="Occult"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cult Lackies" hidden="false" id="6910-8ab5-6462-acbb" sortIndex="2">
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="36bf-be6d-6671-d6a8" primary="true" name="Infantry"/>
+        <categoryLink targetId="ed27-f3df-0200-8193" id="5dd8-e0bc-4c0d-48bb" primary="false" name="Monsters of Tarcas"/>
+        <categoryLink targetId="34b3-a79e-eada-8503" id="d67c-7f05-9cad-f7bc" primary="false" name="Cult of the Wretched"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="The Ritual of Kalgorath" id="0ca6-7a49-1d72-5c30" hidden="false">
+      <description>The Matter of Kalgorath will never truly be lost, all must return to Tarcas. 
+
+In your shooting phase, every OCCULT unit in your army with this rule that is not battle-shocked is eligible to preform a Ritual of Kalgorath. During this action, your OCCULT unit can select a nearby MATTER token within 9&quot;. Roll 3d6, if the result is higher than the units Ritual Difficulty, then it is a success. The dead unit&apos;s starting strength determines what Ritual Difficulty and Ritual Reward you receive. Upon success, select a Ritual Reward option. Upon a failure, the OCCULT unit suffers 1 mortal wound and the next OCCULT unit to attempt a Ritual of Kalgorath on the same MATTER token will receive a +1 to their roll (Stacks up to +3).
+
+
+Starting Strength 0-9:
+Ritual Difficulty: 6+ Ritual Rewards: 1 SP, Heal friendly unit in 9&quot; for d3 wounds, add d3 wounds to a Reforming Unit
+Starting Strength 10-15:
+Ritual Difficulty: 9+ Ritual Rewards: d2 SP, Heal friendly unit in 9&quot; for d3+1 wounds, add d6 wounds to a Reforming Unit
+Starting Strength: 16-21
+Ritual Difficulty: 12+ Ritual Rewards: 2 SP, Heal friendly unit in 9&quot; for d3+2 wounds, add d3+3 wounds to a Reforming Unit
+
+
+Reforming Units:
+
+When the Ritual of Kalgorath is successfully completed, you may start or add to a Reforming Unit. Select one unit that has died, a copy of that unit is placed in Strategic Reserves. You may then start adding wounds to said unit. If the unit has multiple models, once enough wounds are added to have one full model, the subsequent wounds move onto the next. The unit cannot be deployed from Strategic Reserves until they meet the minimum model requirements of that unit type. You may not have more than two Reforming Units at a time. Reforming Units are not affected by and do not affect your Strategic Reserve point limit. Once a Reforming Unit is deployed, it is no longer counted as a Reforming Unit.
+
+For Beta Testing Purposes, here is a graph of starting strength based on a units total possible wounds.
+
+Kalgorath - 16
+Lagrashee - 6
+Moribund - 4
+Ordos - 5
+Occultist - 3
+Black wind Knights - 9/15/21 (Models: 3/5/7)
+Cult Lackies - 10/20 (Models: 10/20)
+Orc Lurkers - 10/20 (Models: 5/10)
+Stone Golum - 10</description>
+    </rule>
+    <rule name="Children of Tarcas" id="3416-10b7-b72d-2a0e" hidden="false">
+      <description>When this unit dies, place a MATTER token as close to the center of the dead unit as possible</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Moribund" hidden="false" id="7134-1b28-796a-9065" targetId="2322-19fd-49aa-c010" type="selectionEntry"/>
+    <entryLink import="true" name="Kalgorath" hidden="false" id="63a7-94a9-b523-0c45" targetId="6873-6410-fad0-9a7e" type="selectionEntry"/>
+    <entryLink import="true" name="Lagrashee" hidden="false" id="29f8-5e6a-495b-abc6" targetId="a301-324b-f221-a4d5" type="selectionEntry"/>
+    <entryLink import="true" name="Ordos" hidden="false" id="4fc1-49f6-cf26-3367" targetId="dabd-ceaf-217e-2582" type="selectionEntry"/>
+    <entryLink import="true" name="Occultist" hidden="false" id="8183-303c-76c0-03c9" targetId="ce18-5091-ae84-b034" type="selectionEntry"/>
+    <entryLink import="true" name="Black Wind Knights" hidden="false" id="d2c8-c4eb-8e9e-d51a" targetId="4ca2-462e-efcf-0863" type="selectionEntry"/>
+    <entryLink import="true" name="Cult Lackies" hidden="false" id="927c-c3d0-19c9-cadd" targetId="6910-8ab5-6462-acbb" type="selectionEntry"/>
+    <entryLink import="true" name="Orc Lurkers" hidden="false" id="5896-87fc-00db-38fd" targetId="73fc-4545-effc-62e5" type="selectionEntry"/>
+    <entryLink import="true" name="Stone Golum" hidden="false" id="2e16-9791-e6dd-1247" targetId="b3f4-7265-39f0-7621" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
