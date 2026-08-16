@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2e51-c9e2-2384-6f55" name="Monsters of Tarcas" gameSystemId="sys-11c1-b4f4-d522-4149" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2e51-c9e2-2384-6f55" name="Monsters of Tarcas" gameSystemId="sys-11c1-b4f4-d522-4149" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Black Wind Knight" id="2649-4b79-1cd4-23b8" hidden="false"/>
     <categoryEntry name="Monsters of Tarcas" id="ed27-f3df-0200-8193" hidden="false"/>
@@ -11,14 +11,186 @@
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Black Wind Knights" hidden="false" id="4ca2-462e-efcf-0863" sortIndex="2">
       <categoryLinks>
-        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="939a-9367-7c6f-5cdb" primary="false" name="Infantry"/>
-        <categoryLink targetId="831c-566c-d583-3bc9" id="d25b-4387-b8ef-02d0" primary="true" name="Elite"/>
+        <categoryLink targetId="63d2-c93d-4a11-8ec0" id="939a-9367-7c6f-5cdb" primary="true" name="Infantry"/>
+        <categoryLink targetId="831c-566c-d583-3bc9" id="d25b-4387-b8ef-02d0" primary="false" name="Elite"/>
         <categoryLink targetId="2649-4b79-1cd4-23b8" id="659c-a7c8-65a4-db9e" primary="false" name="Black Wind Knight"/>
         <categoryLink targetId="ed27-f3df-0200-8193" id="b0a5-75d6-ac35-aed5" primary="false" name="Monsters of Tarcas"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="9"/>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="90"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Black Wind Knights" hidden="false" id="b9c3-6d3e-dc15-9ab3">
+          <profiles>
+            <profile name="Greataxe" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="77c4-c00e-10f9-c9d6">
+              <characteristics>
+                <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
+                <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+                <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
+                <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
+                <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="a943-954e-2be2-f6c5"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="dae5-b110-9299-ce13"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Feel no Pain" id="8292-615d-bf57-9cf9" hidden="false" type="rule" targetId="0618-1f03-ad28-662f">
+              <modifiers>
+                <modifier type="append" value="5+" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Thane" hidden="false" id="7104-64fe-8cc9-0e74">
+          <costs>
+            <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46f3-08dc-975b-1b1b"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear (Melee)" id="265a-b2be-74e8-6770" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="effc-18ef-5aef-25e5-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="effc-18ef-5aef-25e5-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Maul" hidden="false" id="0073-fc41-7caf-c5dd">
+                  <profiles>
+                    <profile name="Maul" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="9a44-5c3d-454c-2a75">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                        <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
+                        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+                        <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
+                        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
+                        <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8">Lethal Hits</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Lethal Hits" id="98be-4628-5812-3ff3" hidden="false" type="rule" targetId="8f8e-b5ec-c93c-4f49"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Flail" hidden="false" id="1603-27de-f345-1342">
+                  <profiles>
+                    <profile name="Flail" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="935f-d86d-5b56-b09a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                        <characteristic name="A" typeId="b55f-70f9-9de2-d330">1</characteristic>
+                        <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">4+</characteristic>
+                        <characteristic name="S" typeId="a8ee-b244-2d28-0003">3</characteristic>
+                        <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-1</characteristic>
+                        <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                        <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8">Sustained Hits</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Sustained Hits" id="05a8-1302-34bb-1a1b" hidden="false" type="rule" targetId="e7ee-9e5f-f027-7d14"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Knight with Special Weapon" hidden="false" id="8ab5-62e2-f4af-38a6">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="7df8-02ad-683b-227b" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Throwing Axes" id="3544-d8a4-5bda-da01" hidden="false">
+                  <profiles>
+                    <profile name="Throwing Axes" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="78fc-9312-c823-98e1">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7536-4955-e000-8ef9"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Occult Blast" id="3c7b-4413-3503-e29f" hidden="false">
+                  <categoryLinks>
+                    <categoryLink targetId="3774-0b71-ff47-5d6c" id="32d4-5d96-caf6-a116" primary="false" name="Occult"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24c9-b372-fc0c-5e9b"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Occult Blast" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="a577-cbc8-685d-f6c4">
+                      <characteristics>
+                        <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+                        <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+                        <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">4+</characteristic>
+                        <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+                        <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+                        <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+                        <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ced4-59d2-4b64-51a4-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced4-59d2-4b64-51a4-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2057-981c-6fef-207a"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Black Wind Knights" typeId="c6d9-c97b-2475-295d" typeName="Unit" hidden="false" id="1414-2771-9f6d-eef1">
+          <characteristics>
+            <characteristic name="M" typeId="5d73-86b8-472a-4a80">6&quot;</characteristic>
+            <characteristic name="T" typeId="83b7-1fb0-c002-3f15">4</characteristic>
+            <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">4+</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">3</characteristic>
+            <characteristic name="I" typeId="699e-2276-91ee-895a">6+</characteristic>
+            <characteristic name="OC" typeId="a953-6bf3-4f33-c691">1</characteristic>
+            <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mutations of Mockery" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="b43e-ed63-9dbc-7c9d">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">Text</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Children of Tarcas" id="cbc5-cfe2-de86-5d49" hidden="false" type="rule" targetId="3416-10b7-b72d-2a0e"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a165-8d76-014a-a702"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="145" field="0d54-ba68-a12e-4d2a" scope="d2c8-c4eb-8e9e-d51a">
+          <conditions>
+            <condition type="atLeast" value="5" field="selections" scope="4ca2-462e-efcf-0863" childId="model" shared="true" childName="model" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="210" field="0d54-ba68-a12e-4d2a" scope="d2c8-c4eb-8e9e-d51a">
+          <conditions>
+            <condition type="atLeast" value="7" field="selections" scope="4ca2-462e-efcf-0863" childId="model" shared="true" childName="model" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Orc Lurkers" hidden="false" id="73fc-4545-effc-62e5" sortIndex="2">
       <costs>
@@ -43,7 +215,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Occultist" hidden="false" id="ce18-5091-ae84-b034" sortIndex="1">
       <costs>
-        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="55"/>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="40"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="01e4-8246-2e95-2cdf" id="aee1-85c7-f1a6-d365" primary="true" name="Strategian"/>
@@ -55,7 +227,6 @@
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Overlord" hidden="false" id="5f31-b68f-3588-3f3b" type="selectionEntry" targetId="1be5-6b18-a389-e8bc" sortIndex="1"/>
-        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="cb42-810a-8f83-92d3" type="selectionEntry" targetId="86c8-2dc9-4e63-d0b8" sortIndex="2"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="The Ritual of Kalgorath" id="fae9-f99c-38c5-a162" hidden="false" type="rule" targetId="0ca6-7a49-1d72-5c30"/>
@@ -66,48 +237,63 @@
         <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4c86-ca8e-5d0b-dc68"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="b86d-d1b2-4a94-8f89" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ragnorak Surge" hidden="false" id="880e-9cbe-fdc1-ecb0">
-              <profiles>
-                <profile name="Ragnorak Surge" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="1abc-4d14-a421-0299">
-                  <characteristics>
-                    <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">24&quot;</characteristic>
-                    <characteristic name="A" typeId="b9f5-d618-08d7-cb66">D3+2</characteristic>
-                    <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
-                    <characteristic name="S" typeId="0890-57f6-b39c-3afb">7</characteristic>
-                    <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
-                    <characteristic name="D" typeId="ba91-9e15-d0be-2790">D3</characteristic>
-                    <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Blast Occult</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tragedy Befalls" hidden="false" id="2784-2890-d5c0-0700">
-              <profiles>
-                <profile name="Hellfire Bolt" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="cde8-4257-e7c0-7b5a">
-                  <characteristics>
-                    <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
-                    <characteristic name="A" typeId="b9f5-d618-08d7-cb66">2</characteristic>
-                    <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
-                    <characteristic name="S" typeId="0890-57f6-b39c-3afb">5</characteristic>
-                    <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
-                    <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
-                    <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Tragedy Befalls" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="5062-bce4-a0dc-f37e">
-                  <characteristics>
-                    <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">In your shooting phase, select on enemy model within 18&quot;. That unit must make a leadership test. On a fail, they suffer a -1 to saving throws until the beginning of your next turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup name="Spellbook" id="b86d-d1b2-4a94-8f89" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8858-87b0-05a7-9c46-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8858-87b0-05a7-9c46-max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8858-87b0-05a7-9c46-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8858-87b0-05a7-9c46-max"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Death &amp; Decay" hidden="false" id="7fd6-c4d4-9ba1-d95e" type="selectionEntry" targetId="7684-c1c2-f763-30e1" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f9b-0092-11d4-1819"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Tornado of Souls" hidden="false" id="3c35-0612-4b7d-583c" type="selectionEntry" targetId="cc2c-7eaa-c049-55e6" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccca-cec8-850a-de7d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chains that Bind" hidden="false" id="0eae-82f6-3f11-3527" type="selectionEntry" targetId="008c-02a7-3787-da37" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e350-04a3-10cb-b41d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Your Body Betrays You" hidden="false" id="33e9-2478-d5ef-19d0" type="selectionEntry" targetId="4a0c-8061-b1a9-d594" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13f2-0de5-0330-918b"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Beast to Command" hidden="false" id="f309-5e7c-4c73-9c32" type="selectionEntry" targetId="2d0e-4603-5224-0804" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3d3-2b6e-b2a5-e4e8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Leviathan&apos;s Fall" hidden="false" id="cf00-0f2d-3494-e57c" type="selectionEntry" targetId="12d0-61a1-dd61-2160" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66f2-3ea8-4675-d287"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="The Wretch Within" hidden="false" id="76aa-e514-2c79-ecee" type="selectionEntry" targetId="6737-6f58-5e94-900d" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b150-a4c6-daa2-e369"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dark Empowerment" hidden="false" id="50c4-9f68-8aff-58c5" type="selectionEntry" targetId="737b-c5c3-9d42-3e67" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de93-e9dc-58cf-51e3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Befall Tragedy" hidden="false" id="45ec-cf9e-c7a6-2988" type="selectionEntry" targetId="e496-153f-d05c-77be" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a235-e9e6-17a1-5752"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pure Occult Scream" hidden="false" id="9119-eeb7-ef09-c621" type="selectionEntry" targetId="df2d-5c89-e26b-f8f0" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389a-0162-c874-52ff"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -121,13 +307,34 @@
             <characteristic name="M" typeId="5d73-86b8-472a-4a80">6&quot;</characteristic>
             <characteristic name="T" typeId="83b7-1fb0-c002-3f15">3</characteristic>
             <characteristic name="Sv" typeId="f255-ffcd-b90c-ce96">6+</characteristic>
-            <characteristic name="W" typeId="aecb-823f-0649-9ff5">3</characteristic>
+            <characteristic name="W" typeId="aecb-823f-0649-9ff5">4</characteristic>
             <characteristic name="I" typeId="699e-2276-91ee-895a">6+</characteristic>
             <characteristic name="OC" typeId="a953-6bf3-4f33-c691">2</characteristic>
             <characteristic name="InSv" typeId="fc26-376c-f2b5-d671">4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ritual Dagger" hidden="false" id="d3cd-b9ca-b5ba-3def">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e1d-1fd3-3f9e-3442-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e1d-1fd3-3f9e-3442-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Ritual Dagger" typeId="06b3-7cc1-54e3-c474" typeName="Melee Weapon" hidden="false" id="9ee4-64d1-4c13-8f72">
+              <characteristics>
+                <characteristic name="Range" typeId="4bc4-c188-45f3-21c9">Melee</characteristic>
+                <characteristic name="A" typeId="b55f-70f9-9de2-d330">2</characteristic>
+                <characteristic name="HS" typeId="03d8-38a9-d18d-e47a">3+</characteristic>
+                <characteristic name="S" typeId="a8ee-b244-2d28-0003">4</characteristic>
+                <characteristic name="AP" typeId="ddb3-3abf-8f2a-c8eb">-2</characteristic>
+                <characteristic name="D" typeId="dd29-6916-bce2-1699">1</characteristic>
+                <characteristic name="Keywords" typeId="ec9c-eed4-21dc-53e8"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lagrashee" hidden="false" id="a301-324b-f221-a4d5" sortIndex="0">
       <costs>
@@ -191,6 +398,276 @@
         <categoryLink targetId="34b3-a79e-eada-8503" id="d67c-7f05-9cad-f7bc" primary="false" name="Cult of the Wretched"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tornado of Souls" hidden="false" id="cc2c-7eaa-c049-55e6" sortIndex="4">
+      <profiles>
+        <profile name="Tornado of Souls" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="17a0-04f5-581c-2413">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">d6</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">4</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Torrent, Occult</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tornado of Souls (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="ea3d-f5e5-0318-cdc2">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When Tornado of Souls is cast on an enemy unit, that enemy unit is then considered Inside the Tornado until the end of your next shooting phase. If Tornado of Souls is cast on an enemy unit already Inside the Tornado, then replace Inside the Tornado with Shredded by the Tornado. A unit with the tag Shredded by the Tornado, cannot have the tag Inside the Tornado. In your next shooting phase, if any enemy units have the tag Shredded by the Tornado, they are attacked by the Tornado of Souls spell once more without the spell being cast by an OCCULT unit. After the free cast has completed itself, remove the Shredded by the Tornado tag.
+
+For Example: Timmy&apos;s occultist cast Tornado of Souls on a squad of Immolators. A d6 of attacks are rolled and so fourth. They now have the tag Inside the Tornado. On his next shooting phase, Timmy then hits that same unit with Tornado of Souls again. A d6 of attacks are rolled and so fourth. They now have the tag Shredded by the Tornado. On Timmy&apos;s next shooting phase, that immolator squad is instantly hit with a d6 of attacks from the Tornado of Souls spell. The attacks are rolled and so fourth. They are no longer considered Shredded by the Storm.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Torrent" id="6fd5-2057-a434-aea9" hidden="false" type="rule" targetId="73cf-a385-c74c-5de0"/>
+        <infoLink name="Occult" id="d254-c460-7492-fc76" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death &amp; Decay" hidden="false" id="7684-c1c2-f763-30e1" sortIndex="4">
+      <profiles>
+        <profile name="Death &amp; Decay" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="9a38-e74e-5472-637c">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">d6</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">3</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Torrent, Occult</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Death &amp; Decay (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="0dbc-1eba-cb34-705e">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When casting Death &amp; Decay, instead of selecting an enemy unit, select a point within the spell&apos;s range. All enemy and friendly units within 3&quot; of that point are each hit by the spell.
+
+For Example: Timmy sees a reliquant squad and a Sanctifier both have models within 3&quot; of the point he selected for Death &amp; Decay. First, Timmy chose to do an attack against the reliquant squad. He rolls a d6 for the attacks and the attacks go through their process. After those attacks are done, Timmy then turns to the Sanctifier and rolls a new d6 of attacks and goes through their process against the sanctifier</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Torrent" id="dacf-d0d8-0b39-f761" hidden="false" type="rule" targetId="73cf-a385-c74c-5de0"/>
+        <infoLink name="Occult" id="949f-67ee-8d75-07c2" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Your Body Betrays You" hidden="false" id="4a0c-8061-b1a9-d594" sortIndex="5">
+      <profiles>
+        <profile name="Your Body Betrays You" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="00a3-61ee-7463-017c">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">d3</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">7</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">2</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult, Sustained Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Your Body Betrays You (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="1c8e-b450-dbed-4610">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy unit is successfully damaged by Your Body Betrays You, roll a d3. Select that many models in the enemy unit. For each model, subtract 1 from their attacks score for all weapons until the start of your next turn (to a minimum of 1).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="02df-c4d3-837f-39f4" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+        <infoLink name="Sustained Hits" id="cac6-2d86-bc8f-b4af" hidden="false" type="rule" targetId="e7ee-9e5f-f027-7d14"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chains that Bind" hidden="false" id="008c-02a7-3787-da37" sortIndex="5">
+      <profiles>
+        <profile name="Chains that Bind" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="44fc-a954-466c-31e4">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">d3</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">5</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">2</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Lethal Hits, Occult</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chains that Bind (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="1850-6164-e2e2-e103">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy unit is successfully hit by Chains that Bind, reduce their movement speed by 2&quot; until the start of your next turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="ec27-8920-7f9d-df26" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+        <infoLink name="Lethal Hits" id="ab87-1d15-3bfc-f96d" hidden="false" type="rule" targetId="8f8e-b5ec-c93c-4f49"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Leviathan&apos;s Fall" hidden="false" id="12d0-61a1-dd61-2160" sortIndex="6">
+      <profiles>
+        <profile name="Leviathan&apos;s Fall" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="7768-f92c-b231-8777">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">10</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">D3+1</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leviathan&apos;s Fall (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="fad4-4b23-f5ac-4027">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy unit is successfully hit by Leviathans Fall, increase their strength by 1 for all weapons and worsen their save characteristic by 1, until the start of your next turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="b4b3-a99d-ed21-b793" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Beast to Command" hidden="false" id="2d0e-4603-5224-0804" sortIndex="6">
+      <profiles>
+        <profile name="Beast to Command" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="1d30-428c-1018-9cc2">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">8</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-3</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">D3+1</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leviathan&apos;s Fall (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="5f54-3bb2-fe34-f342">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy unit is successfully hit by Beast to Command, roll a d3+2.  You may make a normal move of that many inches for that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="bfca-de69-ebfc-889c" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Wretch Within" hidden="false" id="6737-6f58-5e94-900d" sortIndex="7">
+      <profiles>
+        <profile name="The Wretch Within" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="7556-06c4-ec96-b8d2">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">5</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">3</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult, Precision</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Wretch Within (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="5d46-18cb-32eb-5944">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy model is successfully hit by The Wretch Within, that model must make a leadership test with a -2. On a failure, they suffer a -1 to movement, leadership, and OC until the start of your next turn. (to a minimum of one)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="aa7e-5728-9090-761a" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+        <infoLink name="Precision" id="a7f8-c2f2-43a3-1739" hidden="false" type="rule" targetId="6e10-a7c4-f74d-a040"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dark Empowerment" hidden="false" id="737b-c5c3-9d42-3e67" sortIndex="7">
+      <profiles>
+        <profile name="Dark Empowerment" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="e7e1-d27e-2e74-392c">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">1</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">N/A</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">4</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">0</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult, Precision, Torrent</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dark Empowerment (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="2afd-3def-7cb7-97a4">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy model is successfully hit by Dark Empowerment, increase that model&apos;s wounds by 1. Roll a die to determine what effect from the Black Wind Knight&apos;s Mutations of Mockery ability. The enemy model is now affected by the negative aspect of the effect rolled.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="958a-7d38-24d0-cad6" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+        <infoLink name="Precision" id="e92c-0111-0460-29d4" hidden="false" type="rule" targetId="6e10-a7c4-f74d-a040"/>
+        <infoLink name="Torrent" id="3a55-103f-b136-853e" hidden="false" type="rule" targetId="73cf-a385-c74c-5de0"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Befall Tragedy" hidden="false" id="e496-153f-d05c-77be" sortIndex="8">
+      <profiles>
+        <profile name="Befall Tragedy" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="4d9a-354a-6cf0-1807">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">18&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">D3</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">5</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-2</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">1</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult, Pistol</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Befall Tragedy (Occult)" typeId="7c1a-6666-91ad-1439" typeName="Abilities" hidden="false" id="10df-639e-3385-15f1">
+          <characteristics>
+            <characteristic name="Description" typeId="1a74-59f3-85ab-ecb7">When an enemy unit is successfully hit by Befall Tragedy, all attacks against them have a +1 to hit until the start of your next turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="ead2-6e96-5105-e9d0" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+        <infoLink name="Pistol" id="3002-1c9e-d611-0a07" hidden="false" type="rule" targetId="481a-4223-e899-bb9c"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pure Occult Scream" hidden="false" id="df2d-5c89-e26b-f8f0" sortIndex="8">
+      <profiles>
+        <profile name="Pure Occult Scream" typeId="0b00-c588-d8e3-fd9b" typeName="Ranged Weapon" hidden="false" id="2d3f-da01-f5e5-0929">
+          <characteristics>
+            <characteristic name="Range" typeId="735b-d1ce-b6ea-55e6">12&quot;</characteristic>
+            <characteristic name="A" typeId="b9f5-d618-08d7-cb66">D3</characteristic>
+            <characteristic name="HS" typeId="014c-9ce7-ab96-6dc3">3+</characteristic>
+            <characteristic name="S" typeId="0890-57f6-b39c-3afb">4</characteristic>
+            <characteristic name="AP" typeId="8faf-68ec-79c1-1e74">-1</characteristic>
+            <characteristic name="D" typeId="ba91-9e15-d0be-2790">2</characteristic>
+            <characteristic name="Keywords" typeId="05f3-68bd-4eee-3fa7">Occult, Pistol, Extra Attacks, Hazardous</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Occult" id="a6a5-d06a-d892-65e8" hidden="false" type="rule" targetId="424e-447a-a84c-7c36"/>
+        <infoLink name="Pistol" id="3b59-31a6-9078-9793" hidden="false" type="rule" targetId="481a-4223-e899-bb9c"/>
+        <infoLink name="Hazardous" id="7181-4942-ee84-7bd0" hidden="false" type="rule" targetId="91d0-0974-9655-baed"/>
+        <infoLink name="Extra Attacks" id="b985-d2d0-0459-f06d" hidden="false" type="rule" targetId="9edc-b9f7-5440-7981"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="0d54-ba68-a12e-4d2a" value="5"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="The Ritual of Kalgorath" id="0ca6-7a49-1d72-5c30" hidden="false">
@@ -209,7 +686,7 @@ Ritual Difficulty: 12+ Ritual Rewards: 2 SP, Heal friendly unit in 9&quot; for d
 
 Reforming Units:
 
-When the Ritual of Kalgorath is successfully completed, you may start or add to a Reforming Unit. Select one unit that has died, a copy of that unit is placed in Strategic Reserves. You may then start adding wounds to said unit. If the unit has multiple models, once enough wounds are added to have one full model, the subsequent wounds move onto the next. The unit cannot be deployed from Strategic Reserves until they meet the minimum model requirements of that unit type. You may not have more than two Reforming Units at a time. Reforming Units are not affected by and do not affect your Strategic Reserve point limit. Once a Reforming Unit is deployed, it is no longer counted as a Reforming Unit.
+When the Ritual of Kalgorath is successfully completed, you may start or add to a Reforming Unit. Select one unit that has died, a copy of that unit is placed in Strategic Reserves. CHARACTER units may not be reformed. You may then start adding wounds to said unit. If the unit has multiple models, once enough wounds are added to have one full model, the subsequent wounds move onto the next. The unit cannot be deployed from Strategic Reserves until they meet the minimum model requirements of that unit type. You may not have more than two Reforming Units at a time. Reforming Units are not affected by and do not affect your Strategic Reserve point limit. Once a Reforming Unit is deployed, it is no longer counted as a Reforming Unit.
 
 For Beta Testing Purposes, here is a graph of starting strength based on a units total possible wounds.
 
@@ -238,4 +715,14 @@ Stone Golum - 10</description>
     <entryLink import="true" name="Orc Lurkers" hidden="false" id="5896-87fc-00db-38fd" targetId="73fc-4545-effc-62e5" type="selectionEntry"/>
     <entryLink import="true" name="Stone Golum" hidden="false" id="2e16-9791-e6dd-1247" targetId="b3f4-7265-39f0-7621" type="selectionEntry"/>
   </entryLinks>
+  <rules>
+    <rule name="Occult" id="424e-447a-a84c-7c36" hidden="false">
+      <description>Lasting effects from Occult spells cannot stack</description>
+    </rule>
+    <rule name="Extra Attacks" id="9edc-b9f7-5440-7981" hidden="false">
+      <description>Each time a unit containing one or more models with an EXTRA ATTACKS weapon fights, those models will make attacks with those weapons in addition to any others. In the Select Weapons step , for each of those models, you must select:
+All of that model’s EXTRA ATTACKS weapons.
+One of that model’s other melee weapons, if possible.</description>
+    </rule>
+  </rules>
 </catalogue>
